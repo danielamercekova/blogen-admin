@@ -45,7 +45,7 @@
                 <i class="fas fa-user-circle"></i><span class="nav-icon">Profile</span>
               </a>
               <a href="settings.html" class="dropdown-item">
-                <i class="fas fa-cog"></i><span class="nav-icon">Details</span>
+                <i class="fas fa-cog"></i><span class="nav-icon">Settings</span>
               </a>
             </div>
           </li>
@@ -64,7 +64,7 @@
     <div class="container">
       <div class="row">
         <div col-md-6>
-          <h1><i class="fas fa-cog"></i><span class="nav-icon">Settings</span></h1>
+          <h1><i class="fas fa-user"></i><span class="nav-icon">Edit profile</span></h1>
         </div>
       </div>
     </div>
@@ -76,58 +76,55 @@
       <div class="row">
         <div class="col-md-3">
           <a href="index.html" class="btn btn-outline-secondary btn-block">
-            <i class="far fa-arrow-alt-circle-left"></i><span class="nav-icon">Back to Dashboard</span>
+            <i class="fas fa-arrow-left"></i><span class="nav-icon">Back to Dashboard</span>
           </a>
         </div>
         <div class="col-md-3">
-          <a href="index.html" class="btn btn-success btn-block">
-            <i class="fas fa-check"></i><span class="nav-icon">Save Changes</span>
+          <a href="#" class="btn btn-success btn-block">
+            <i class="fas fa-lock"></i><span class="nav-icon">Change Password</span>
+          </a>
+        </div>
+        <div class="col-md-3">
+          <a href="#" class="btn btn-warning btn-block">
+            <i class="fas fa-trash"></i><span class="nav-icon">Delete account</span>
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SETTINGS -->
- <section id="settings">
+  <!-- PROFILE -->
+ <section id="profile">
   <div class="container">
     <div class="row">
-      <div class="col">
+      <div class="col-md-9">
         <div class="card">
           <div class="card-header">
-            <h4>Edit settings</h4>
+            <h4>Edit Profile</h4>
             <div class="card-body">
               <form>
-                <fieldset class="form-group">
-                  <legend>Allow user registration</legend>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                    <input type="radio" class="form-check-input" value="Yes" checked>Yes
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                    <input type="radio" class="form-check-input" value="No">No
-                    </label>
-                  </div>
-                </fieldset>
-                <fieldset class="form-group">
-                  <legend>Homepage format</legend>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                    <input type="radio" class="form-check-input" value="posts" checked>Blog page
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <label class="form-check-label">
-                    <input type="radio" class="form-check-input" value="page">Homepage
-                    </label>
-                  </div>
-                </fieldset>
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" class="form-control" value="Brad Traversy">
+                </div>
+                <div class="form-group">
+                  <label for="name">Email</label>
+                  <input type="email" class="form-control" value="test@test.com">
+                </div>
+                <div class="form-group">
+                  <label for="name">Bio</label>
+                  <textarea class="form-control" name="editor1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum a minus animi cupiditate unde nobis, velit modi dolor odit quo officiis iusto, dolore adipisci accusantium.</textarea>
+                </div>
               </form>
             </div>
           </div>
         </div>
+      </div>
+      <div class="col-md-3">
+        <h3>Your Avatar</h3>
+        <img src="img/avatar.png" alt="" class="d-block img-fluid mb-3">
+        <button class="btn btn-primary btn-block">Edit image</button>
+        <button class="btn btn-secondary btn-block">Delete image</button>
       </div>
     </div>
   </div>
